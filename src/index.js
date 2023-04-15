@@ -7,7 +7,8 @@ setTimeout(displaydate, 5000);
 
 function displaymillisec() {
   let millisectime = document.querySelector("#milliseconds");
-  millisectime.innerHTML = new Date();
+  let completedate = new Date();
+  millisectime.innerHTML = completedate.getMilliseconds();
 }
 
-setInterval(displaymillisec, 1000);
+setInterval(displaymillisec, 1);
